@@ -1,0 +1,111 @@
+@keyframes animacao{
+    0%{border-color: violet;}
+    10%{ border-color: indigo; }
+    20%{ border-color: blue; }
+    30%{ border-color: green;}
+    40%{border-color: yellow; }
+    50%{border-color: orange;}
+    60%{ border-color: red; }
+    70%{  border-color: cyan;}
+    80%{   border-color: pink; }
+    90%{   border-color: burlywood;  }
+    100%{  border-color: gold; }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.topo .imagem #logo{
+    width: 40px;
+}
+
+.carrinho_pesquisa{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.imagem_do_centro{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem_do_centro #imagem_central{
+    width: 100%;
+}
+
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.catalogo div{
+    animation: none;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    
+    width: 300px;
+    height: 400px;
+}
+
+.catalogo img{
+    position: relative;
+    left: 15%;
+    height: 300px;
+    width: 200px;
+    
+}
+
+.catalogo span, a, p{
+    display: flex;
+    justify-content: center;
+}
+
+.catalogo div:hover{
+    animation: animacao 1s infinite;
+}
+
+button{
+    position: relative;
+    left: 10%;
+}
+
+button, button:visited{
+    background-color: #666;
+    color:#fff;
+    width:120px;  
+    height:24px;
+}
+
+button:hover{
+    background-color: #666;
+    color:#999;
+}
+
+#texto{
+    text-align: center;
+}
